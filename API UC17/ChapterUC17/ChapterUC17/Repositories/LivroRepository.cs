@@ -17,7 +17,43 @@ namespace ChapterUC17.Repositories
             return _context.Livros.ToList();
         }
 
+        public Livro BuscarPorId(int id)
+        {
+            return _context.Livros.Find(id);
+        }
+
+        public void Cadastro(Livro l)
+        {
+            _context.Livros.Add(l);
+            _context.SaveChanges();
+        }
+
+        public void Deletar(int id)
+        {
+            Livro l = _context.Livros.Find(id);
+            _context.Livros.Remove(id);
+
+        }
+
+        public void Alterar(int id, Livro l)
+        {
+            Livro livroBuscado = _context.Livros.Find(id);
+
+            if(livroBuscado != null)
+            {
+                livroBuscado.Titulo = l.Titulo;
+                livroBuscado.QUantidadePaginas = l.QUantidadePaginas;
+                livroBuscado.Disponivel = l.Disponivel;
+                _context.Livros.Update(livroBuscado);
+                _context.SaveChanges();
 
 
+            }
+        }
+
+        //internal object? BuscarPorId(object id)
+        //{
+        //    throw new NotImplementedException();
+        //}
     }
 }
