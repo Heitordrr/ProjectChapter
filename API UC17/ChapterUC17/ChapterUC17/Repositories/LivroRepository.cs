@@ -31,8 +31,8 @@ namespace ChapterUC17.Repositories
         public void Deletar(int id)
         {
             Livro l = _context.Livros.Find(id);
-            _context.Livros.Remove(id);
-
+            _context.Livros.Remove(l);
+            _context.SaveChanges();
         }
 
         public void Alterar(int id, Livro l)

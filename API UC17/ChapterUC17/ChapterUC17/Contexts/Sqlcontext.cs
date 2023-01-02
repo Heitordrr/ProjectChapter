@@ -22,5 +22,7 @@ namespace ChapterUC17.Contexts
         }
         //dbset 
         public DbSet<Livro> Livros { get; set; }
+
+        public DbSet<Usuario> Usuarios { get; set; }
     }
 }
