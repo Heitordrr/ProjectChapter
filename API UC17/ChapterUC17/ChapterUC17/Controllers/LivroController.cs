@@ -3,12 +3,15 @@ using ChapterUC17.Repositories;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Reflection.Metadata.Ecma335;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 
 namespace ChapterUC17.Controllers
 {
     [Produces("application/json")]
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class LivroController : ControllerBase
     {
         private readonly LivroRepository _livroRepository;
@@ -58,7 +61,7 @@ namespace ChapterUC17.Controllers
                 throw new Exception(e.Message);
             }
         }
-
+        [Authorize(Roles = "1")]
         [HttpPost]
         public IActionResult Cadastrar(Livro l) {
 
