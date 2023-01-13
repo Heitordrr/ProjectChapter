@@ -9,6 +9,7 @@ using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Reflection.Metadata;
 using System.Security.Claims;
+using JwtRegisteredClaimNames = Microsoft.IdentityModel.JsonWebTokens.JwtRegisteredClaimNames;
 
 namespace ChapterUC17.Controllers
 {
@@ -40,7 +41,7 @@ namespace ChapterUC17.Controllers
                 var minhasClaims = new[]
                 {
                     new Claim(JwtRegisteredClaimNames.Email, usuarioBuscado.Email),
-                    new Claim(JwtRegisteredClaimNames.Now.AddMinutes(60), usuarioBuscado.id.ToString()),
+                    new Claim(JwtRegisteredClaimNames.Jti, usuarioBuscado.id.ToString()),
                     new Claim(ClaimTypes.Role, usuarioBuscado.Tipo)
                 };
 

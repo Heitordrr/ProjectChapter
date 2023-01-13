@@ -77,3 +77,4 @@ C:\Users\Heito\OneDrive\Documentos\OI\SENAI\UC 17\API UC17\ChapterUC17\ChapterUC
 C:\Users\Heito\OneDrive\Documentos\OI\SENAI\UC 17\API UC17\ChapterUC17\ChapterUC17\obj\Debug\net6.0\ChapterUC17.pdb
 C:\Users\Heito\OneDrive\Documentos\OI\SENAI\UC 17\API UC17\ChapterUC17\ChapterUC17\obj\Debug\net6.0\ChapterUC17.genruntimeconfig.cache
 C:\Users\Heito\OneDrive\Documentos\OI\SENAI\UC 17\API UC17\ChapterUC17\ChapterUC17\obj\Debug\net6.0\ref\ChapterUC17.dll
+C:\Users\Heito\OneDrive\Documentos\OI\SENAI\UC 17\API UC17\ChapterUC17\ChapterUC17\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33103.184
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChapterUC17", "ChapterUC17\ChapterUC17.csproj", "{05AF17E0-9274-4518-9CBF-F18D3C733E1E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ChapterUC17", "ChapterUC17\ChapterUC17.csproj", "{05AF17E0-9274-4518-9CBF-F18D3C733E1E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TesteIntegracao", "TesteIntegracao\TesteIntegracao.csproj", "{533E3FEA-29DB-4616-B284-FDD7F49F8C89}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{05AF17E0-9274-4518-9CBF-F18D3C733E1E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{05AF17E0-9274-4518-9CBF-F18D3C733E1E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{05AF17E0-9274-4518-9CBF-F18D3C733E1E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{533E3FEA-29DB-4616-B284-FDD7F49F8C89}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{533E3FEA-29DB-4616-B284-FDD7F49F8C89}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{533E3FEA-29DB-4616-B284-FDD7F49F8C89}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{533E3FEA-29DB-4616-B284-FDD7F49F8C89}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
